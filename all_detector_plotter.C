@@ -124,7 +124,7 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                         if (gDirectory->Get(h_name)) gDirectory->Get(h_name)->Delete();
                         tree2->Draw(non_evt_branch_names[i-9] + ">>" + h_name + "(100)", "", "goff");
                         TH1F* h = (TH1F*)gDirectory->Get(h_name);
-                        title[i-1] = "evt " + non_evt_branch_names[i-9] + ";yield;counts";
+                        title[i-1] = "pr " + non_evt_branch_names[i-9] + ";yield;counts";
                         h->SetTitle(title[i-1]);
                         h->Draw("HIST");
                 }
@@ -135,7 +135,7 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                         if (gDirectory->Get(h_name)) gDirectory->Get(h_name)->Delete();
                         tree3->Draw(non_evt_branch_names[i-17] + ">>" + h_name + "(100)", "", "goff");
                         TH1F* h = (TH1F*)gDirectory->Get(h_name);
-                        title[i-1] = "evt " + non_evt_branch_names[i-17] + ";yield;counts";
+                        title[i-1] = "mul " + non_evt_branch_names[i-17] + ";yield;counts";
                         h->SetTitle(title[i-1]);
                         h->Draw("HIST");
                 }
