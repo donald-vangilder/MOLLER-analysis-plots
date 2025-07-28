@@ -40,7 +40,8 @@ For a more in-depth explanation of how to use this macro, it can be run as: all_
 This will explain the usable monitor types and monitor ids
 
 Below is an example output of a bpm plot when running the all_detector_plotter.C file
-<img width="500" height="300" alt="bpm all_det_plot" src="https://github.com/user-attachments/assets/8bb7a688-eb59-4a4d-a8eb-e202e12815ef" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4b0ed978-f2d2-46bb-822d-0d9796570b3c" />
+
 
 Below is an example output of a non-bpm plot when running the all_detector_plotter.C file
 <img width="500" height="300" alt="la all_det_plot" src="https://github.com/user-attachments/assets/0d6ca4e8-f499-4350-b0cf-151c3de24c94" />
