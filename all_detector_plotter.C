@@ -118,7 +118,7 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                 c->cd(3);
                 tree1->Draw(evt_branch_names[1] + ":" + evt_branch_names[2] + ">> h3(100)", "", "goff");
                 TH2F* h3 = (TH2F*)gDirectory->Get("h3");
-                title[2] = "evt " + evt_branch_names[1] + "vs" + evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
+                title[2] = "evt " + evt_branch_names[1] + " vs " + evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
                 h3->SetTitle(title[2]);
                 h3->Draw("HIST");
 
@@ -147,7 +147,7 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                 c->cd(7);
                 tree2->Draw(non_evt_branch_names[1] + ":" + non_evt_branch_names[2] + ">> h7(100)", "", "goff");
                 TH1F* h7 = (TH1F*)gDirectory->Get("h7");
-                title[6] = "pr " + non_evt_branch_names[1] + "vs" + non_evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
+                title[6] = "pr " + non_evt_branch_names[1] + " vs " + non_evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
                 h7->SetTitle(title[6]);
                 h7->Draw("HIST");
 
@@ -161,21 +161,21 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                 c->cd(9);
                 tree2->Draw(non_evt_branch_names[3] + ">> h9(100)", "", "goff");
                 TH1F* h9 = (TH1F*)gDirectory->Get("h9");
-                title[8] = "pr " + non_evt_branch_names[3] + ";Yield;Counts";
+                title[8] = "pr " + non_evt_branch_names[3] + ";Asymmetry;Counts";
                 h9->SetTitle(title[8]);
                 h9->Draw("HIST");
 
                 c->cd(10);
                 tree2->Draw(non_evt_branch_names[3] + ":Entry$ >> h10(100)", "", "goff");
                 TH1F* h10 = (TH1F*)gDirectory->Get("h10");
-                title[9] = "pr " + non_evt_branch_names[3] + " vs Time;Entry Number;Yield";
+                title[9] = "pr " + non_evt_branch_names[3] + " vs Time;Entry Number;Asymmetry";
                 h10->SetTitle(title[9]);
                 h10->Draw("HIST");
 
                 c->cd(11);
                 tree2->Draw(non_evt_branch_names[4] + ":" + non_evt_branch_names[5] + ">> h11(100)", "", "goff");
                 TH1F* h11 = (TH1F*)gDirectory->Get("h11");
-                title[10] = "pr " + non_evt_branch_names[4] + "vs" + non_evt_branch_names[5] + ";" + evt_branch_names[5] + ";" + evt_branch_names[4];
+                title[10] = "pr " + non_evt_branch_names[4] + " vs " + non_evt_branch_names[5] + ";" + evt_branch_names[5] + ";" + evt_branch_names[4];
                 h11->SetTitle(title[10]);
                 h11->Draw("HIST");
 
@@ -204,7 +204,7 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                 c->cd(15);
                 tree3->Draw(non_evt_branch_names[1] + ":" + non_evt_branch_names[2] + ">> h15(100)", "", "goff");
                 TH1F* h15 = (TH1F*)gDirectory->Get("h15");
-                title[14] = "mul " + non_evt_branch_names[1] + "vs" + non_evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
+                title[14] = "mul " + non_evt_branch_names[1] + " vs " + non_evt_branch_names[2] + ";" + evt_branch_names[2] + ";" + evt_branch_names[1];
                 h15->SetTitle(title[14]);
                 h15->Draw("HIST");
 
@@ -218,21 +218,21 @@ void all_detector_plotter(TString monitor_type, TString monitor_id, int run_num)
                 c->cd(17);
                 tree3->Draw(non_evt_branch_names[3] + ">> h17(100)", "", "goff");
                 TH1F* h17 = (TH1F*)gDirectory->Get("h17");
-                title[16] = "mul " + non_evt_branch_names[3] + ";Yield;Counts";
+                title[16] = "mul " + non_evt_branch_names[3] + ";Asymmetry;Counts";
                 h17->SetTitle(title[16]);
                 h17->Draw("HIST");
 
                 c->cd(18);
                 tree3->Draw(non_evt_branch_names[3] + ":Entry$ >> h18(100)", "", "goff");
                 TH1F* h18 = (TH1F*)gDirectory->Get("h18");
-                title[17] = "mul " + non_evt_branch_names[3] + " vs Time;Entry Number;Yield";
+                title[17] = "mul " + non_evt_branch_names[3] + " vs Time;Entry Number;Asymmetry";
                 h18->SetTitle(title[17]);
                 h18->Draw("HIST");
 
                 c->cd(19);
                 tree3->Draw(non_evt_branch_names[4] + ":" + non_evt_branch_names[5] + ">> h19(100)", "", "goff");
                 TH1F* h19 = (TH1F*)gDirectory->Get("h19");
-                title[18] = "mul " + non_evt_branch_names[4] + "vs" + non_evt_branch_names[5] + ";" + evt_branch_names[5] + ";" + evt_branch_names[4];
+                title[18] = "mul " + non_evt_branch_names[4] + " vs " + non_evt_branch_names[5] + ";" + evt_branch_names[5] + ";" + evt_branch_names[4];
                 h19->SetTitle(title[18]);
                 h19->Draw("HIST");
 
