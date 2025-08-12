@@ -35,8 +35,8 @@ Below is an example output of another page of the tq_ring_sector_plotter.cfg fil
 
 
 The only macro that needs to be used without a configuration file is all_detector_plotter.C
-This macro will plot information about a specific detector or beam monitor with the following format: all_analyzer_plotter("monitor_type","monitor_id", run_num)
-For a more in-depth explanation of how to use this macro, it can be run as: all_analyzer_plotter("help")
+This macro will plot information about a specific detector or beam monitor with the following format: all_detector_plotter("monitor_type","monitor_id", run_num)
+For a more in-depth explanation of how to use this macro, it can be run as: all_detector_plotter("help")
 This will explain the usable monitor types and monitor ids
 
 Below is an example output of a bpm plot when running the all_detector_plotter.C file
